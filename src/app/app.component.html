@@ -1,0 +1,28 @@
+<div class="content" role="main">
+
+  <div style="text-align:center">
+	<h1>{{ title }} app is running!</h1>
+    <h2>Advanced Printing from Javascript</h2>
+    <fieldset>
+		<legend>Client Printer:</legend>
+		<label class="checkbox">
+				<input type="checkbox" id="useDefaultPrinter" ng-checked="isDefaultPrinterSelected" /> <strong>Print to Default printer</strong>
+			</label>
+		<p>or...</p>
+		<div id="installedPrinters">
+			<label for="installedPrinterName">Select an installed Printer:</label>
+			<select name="printer" id="printer" [(ngModel)]="selectedPrinter">
+						<option disabled [ngValue]="undefined">Select printer</option>
+						<option *ngFor="let printer of printers" [ngValue]="printer">{{ printer }}</option>
+					</select>
+		</div>
+	</fieldset>
+    <br /><br />
+    <button (click)="doPrintZPL()">Print ZPL commands (Zebra printer required)...</button>&nbsp;<strong>OR</strong>&nbsp;<button (click)="doPrintPDF()">Print PDF...</button>
+</div>
+
+
+</div>
+
+
+<router-outlet></router-outlet>
