@@ -27,9 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-                            "src/assets/js/zip.js",
-                            "src/assets/js/zip-ext.js",
-                            "src/assets/js/deflate.js",
+                            "src/assets/js/zip-full.min.js",
                             "src/assets/js/JSPrintManager.js"
                         ]
           },
