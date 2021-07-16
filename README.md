@@ -8,13 +8,10 @@ For additional samples **in plain Javascript code** for other printer commands a
 
 ## How to integrate JSPrintManager in Angular  
  
-- Add all the JSPrintManager's Javascript + Typing files and its dependencies under `/src/assets/js/`. JSPrintManager files available at https://github.com/neodynamic/JSPrintManager/blob/master/scripts/ and zip.js typing available at https://github.com/slavovojacek/adbrain-typescript-definitions/blob/master/zip.js/zip.js.d.ts After doing that, it should look like the following: 
+- Add all the JSPrintManager's Javascript + Typing files and its dependencies under `/src/assets/js/`. JSPrintManager files available at https://github.com/neodynamic/JSPrintManager/blob/master/scripts/  After doing that, it should look like the following: 
 	- ./src/assets/js/JSPrintManager.js
-	- ./src/assets/js/deflate.js
-	- ./src/assets/js/zip-ext.js
-	- ./src/assets/js/zip.js
+	- ./src/assets/js/zip-full.min.js
 	- ./src/assets/js/JSPrintManager.d.ts
-	- ./src/assets/js/zip.js.d.ts
 - Add scripts references to `./angular.json` (Lines 30~33 in this sample app)
 - Add a reference to FormsModule in `./src/app/app.module.ts` (Lines 3 & 15 in this sample app)
 - HTML for this sample `./src/app/app.component.html`
