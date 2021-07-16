@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
         // Create a ClientPrintJob
         const cpj = new JSPM.ClientPrintJob();
         // Set Printer type (Refer to the help, there many of them!)
-		//https://www.neodynamic.com/Products/Help/JSPrintManager2.0/articles/jsprintmanager.html#client-printer-types
+		//https://www.neodynamic.com/Products/Help/JSPrintManager4.0/articles/jsprintmanager.html#client-printer-types
         if ( this.isDefaultPrinterSelected ) {
           cpj.clientPrinter = new JSPM.DefaultPrinter();
         } else {
@@ -96,7 +96,7 @@ export class AppComponent implements OnInit {
 
         // Set content to print...
         //Set PDF file... for more advanced PDF settings please refer to 
-		//https://www.neodynamic.com/Products/Help/JSPrintManager2.0/apiref/classes/jspm.printfilepdf.html
+		//https://www.neodynamic.com/Products/Help/JSPrintManager4.0/apiref/classes/jspm.printfilepdf.html
 		var my_file = new JSPM.PrintFilePDF('https://neodynamic.com/temp/LoremIpsum.pdf', JSPM.FileSourceType.URL, 'MyFile.pdf', 1);
 		
 		cpj.files.push(my_file);
