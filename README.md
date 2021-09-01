@@ -8,14 +8,19 @@ For additional samples **in plain Javascript code** for other printer commands a
 
 ## How to integrate JSPrintManager in Angular  
  
-- Add all the JSPrintManager's Javascript + Typing files and its dependencies under `/src/assets/js/`. JSPrintManager files available at https://github.com/neodynamic/JSPrintManager/blob/master/scripts/  After doing that, it should look like the following: 
-	- ./src/assets/js/JSPrintManager.js
-	- ./src/assets/js/zip-full.min.js
-	- ./src/assets/js/JSPrintManager.d.ts
+- Add all the JSPrintManager's Javascript + Typing files and its dependencies under `/src/assets/js/`. JSPrintManager files available at https://github.com/neodynamic/JSPrintManager/blob/master/scripts/ and zip.js is available at https://github.com/gildas-lormeau/zip.js/tree/master/dist  After doing that, it should look like the following: 
+	- `./src/assets/js/JSPrintManager.js`
+	- `./src/assets/js/zip-full.min.js`
+	- `./src/assets/js/JSPrintManager.d.ts`
 - Add scripts references to `./angular.json` (Lines 30~33 in this sample app)
 - Add a reference to FormsModule in `./src/app/app.module.ts` (Lines 3 & 15 in this sample app)
 - HTML for this sample `./src/app/app.component.html`
 - JSPrintManager Logic for this sample `./src/app/app.component.ts`
+
+> If you get the following error `Cannot find namespace ‘zip’` then please add the following line to the end of the `JSPrintManager.d.ts` file:
+> ```js
+> declare namespace zip { class Reader {} } 
+> ```
 
 ## Licensing
 
