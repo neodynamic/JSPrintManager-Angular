@@ -27,7 +27,6 @@
               "src/styles.css"
             ],
             "scripts": [
-                            "src/assets/js/zip-full.min.js",
                             "src/assets/js/JSPrintManager.js"
                         ]
           },
